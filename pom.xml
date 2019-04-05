@@ -15,11 +15,10 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-      <mule.version>3.8.0</mule.version>
+      <mule.version>3.8.3</mule.version>
       <mule.tools.version>1.2</mule.tools.version>
       <derby.version>10.13.1.1</derby.version>
       <activemq.version>5.14.5</activemq.version>
-      <esb.version>3.9.2</esb.version>
    </properties>
 
    <build>
@@ -69,18 +68,21 @@
       <dependency>
          <groupId>com.mulesoft.muleesb</groupId>
          <artifactId>mule-core-ee</artifactId>
+         <version>${mule.version}</version>
          <scope>provided</scope>
       </dependency>
       <!-- Xml configuration -->
       <dependency>
          <groupId>com.mulesoft.muleesb.modules</groupId>
          <artifactId>mule-module-spring-config-ee</artifactId>
+         <version>${mule.version}</version>
          <scope>provided</scope>
       </dependency>
       <!-- Mule Transports -->
       <dependency>
          <groupId>org.mule.transports</groupId>
          <artifactId>mule-transport-file</artifactId>
+         <version>${mule.version}</version>
          <scope>provided</scope>
       </dependency>
       <dependency>
@@ -92,6 +94,7 @@
       <dependency>
          <groupId>com.mulesoft.muleesb.transports</groupId>
          <artifactId>mule-transport-jdbc-ee</artifactId>
+         <version>${mule.version}</version>
          <scope>provided</scope>
       </dependency>
       <dependency>
